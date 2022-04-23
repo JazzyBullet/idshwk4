@@ -29,7 +29,7 @@ event zeek_init()
                             {
                                 if(r2$sum / r1$sum > 0.2)
                                 {
-                                    if(r3$sum / r2$sum > 0.5)
+                                    if(r3$unique / r2$sum > 0.5)
                                     {
                                         print fmt("%s is a scanner with %.0f scan attemps on %d urls", key$host, r2$sum, r3$unique);
                                     }
